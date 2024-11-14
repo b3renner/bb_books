@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="Website Icon" href="livro.png">
     
     <title>B&B Books</title>
@@ -25,7 +25,7 @@
 <header>
     <div class="interface">
         <div class="logo">
-            <a id="logo" href="#">
+            <a id="logo" href="#fundo">
                 <img id="logo" src="logo.png" alt="img de livros">
             </a>
         </div>
@@ -56,8 +56,8 @@
         <br>
         <br>
 
-        <div class="coluna dois">
-            <img class="fixed" src="blog.jpeg" width="120%" height="100%" alt="Livros" />
+        <div id="imglivros" class="coluna dois">
+            <img src="blog.jpeg" width="120%" height="100%" alt="Livros" />
         </div>
 
         <div id="qmsomos" class="coluna dois">
@@ -81,6 +81,7 @@
             <img src="rev.jpg" alt="Revolução dos Bichos">
             <button onclick="toggleText('revText')">Saiba mais!</button>
         </div>
+      
 
         <div class="rev coluna dois" id="revText" style="display:none;">
             <h2> Resenha</h2>
@@ -90,6 +91,8 @@
             <h4> Avaliação: 4.5/5 </h4>
         </div>
 
+        <br>
+
         <!-- Metamorfose -->
         <div class="item coluna dois">
             <h2>Metamorfose</h2>
@@ -97,6 +100,7 @@
             <img src="meta.jpg" alt="Metamorfose">
             <button onclick="toggleText('metaText')">Saiba mais!</button>
         </div>
+        <br>
 
         <div class="meta coluna dois" id="metaText" style="display:none;">
             <h2> Resenha</h2>
@@ -113,6 +117,7 @@
             <img src="pijama.jpg" alt="O menino do pijama listrado">
             <button onclick="toggleText('pijamaText')">Saiba mais!</button>
         </div>
+        <br>
 
         <div class="pijama coluna dois" id="pijamaText" style="display:none;">
             <h2> Resenha</h2>
@@ -123,7 +128,64 @@
         </div>
     </section>
 
-    <hr>
+    <section id="carrossel">
+
+        <h1 class="titulo">Autores</h1>
+    <ul class="gallery">
+        
+        <li style="background: rgb(36, 42, 66);">
+            <h3 class="titulo">George Orwell</h3>
+            <div class="setenta ">
+            <p class="subtitulo ">George Orwell, pseudônimo de Eric Arthur Blair (1903-1950), foi um escritor, ensaísta e jornalista britânico, amplamente conhecido por suas críticas à opressão política, à tirania e ao totalitarismo. Nascido na Índia Britânica, Orwell viveu parte de sua infância e juventude no Reino Unido, onde começou sua carreira literária.
+                Orwell é autor de obras célebres como 1984 e A Revolução dos Bichos (Animal Farm), que exploram os perigos do controle autoritário e da manipulação política. 1984 retrata uma distopia onde o governo controla completamente a vida das pessoas, enquanto A Revolução dos Bichos é uma sátira alegórica sobre a ascensão do comunismo na União Soviética.
+                Ele também escreveu sobre questões sociais e econômicas em obras como Na Pior em Paris e Londres e O Caminho para Wigan Pier, onde descreve as dificuldades das classes trabalhadoras. Orwell foi um crítico ferrenho das injustiças sociais, e suas obras são marcadas por uma visão aguçada da política, dos direitos humanos e da liberdade.              
+                Sua prosa clara e seu engajamento político tornaram suas obras amplamente estudadas e influentes até hoje.</p>
+            </div>
+                <div id ='imgautor'>
+            <img  src="orwell.jpg" alt="George Orwell">
+        </div>
+            </li>
+
+        
+        <li style="background: #7a9fab">
+            <h3 class="titulo">Franz Kafka</h3>
+            <div class="setenta ">
+            <p class="subtitulo ">Franz Kafka (1883-1924) foi um escritor tcheco de língua alemã, conhecido por suas obras complexas e surrealistas que exploram temas de alienação, burocracia, e a condição humana. Nascido em Praga, em uma família de origem judaica, Kafka teve uma educação formal em Direito, mas sua verdadeira paixão estava na escrita.
+
+                As obras de Kafka frequentemente apresentam protagonistas que enfrentam situações absurdas e opressivas, refletindo seu sentimento de impotência diante das instituições sociais e políticas. Seu trabalho mais famoso, A Metamorfose, narra a história de Gregor Samsa, que se transforma inexplicavelmente em um inseto, simbolizando a alienação e a desumanização na vida moderna.
+                
+                Outros escritos notáveis incluem O Processo, que aborda a luta de um homem contra um sistema judicial incompreensível e opressivo, e O Castelo, onde o protagonista busca, em vão, acesso a uma autoridade distante e inacessível. A prosa de Kafka é marcada por um estilo distintivo, que combina o realismo com elementos fantásticos, criando um sentimento de estranhamento.
+                
+                Kafka publicou apenas uma parte de sua obra em vida, e muitos de seus escritos foram encontrados após sua morte e publicados por seu amigo Max Brod, que ignorou seu desejo de destruir os manuscritos. O impacto de Kafka na literatura é imenso, e ele é considerado uma figura central do modernismo, influenciando uma ampla gama de escritores e artistas ao longo do século XX e além.</p>
+            </div>
+                <div id ='imgautor'>
+            <img  src="kafka.jpeg" alt="Franz Kafka">
+        </div>
+
+
+
+        </li>
+
+
+        <li style="background: rgb(42, 51, 82)">
+            <h3 class="titulo">John Boyne</h3>
+            <div class="setenta ">
+            <p class="subtitulo ">John Boyne é um escritor irlandês, nascido em 30 de abril de 1971, conhecido principalmente por seu romance "O Menino do Pijama Listrado" (The Boy in the Striped Pyjamas), publicado em 2006. A obra, que se passa durante a Segunda Guerra Mundial, aborda a amizade entre Bruno, um garoto alemão, e Shmuel, um menino judeu em um campo de concentração, e conquistou leitores ao redor do mundo por seu retrato sensível e comovente do Holocausto.
+
+                Boyne também escreveu diversos outros livros, tanto para adultos quanto para o público jovem, incluindo romances históricos e contemporâneos. Alguns de seus títulos notáveis são "O Pacifista" (The Absolutist), que trata da Primeira Guerra Mundial, e "Fique Onde Está e Então Corra" (Stay Where You Are and Then Leave), também ambientado durante a Primeira Guerra.
+                
+                Seu estilo é marcado pela profundidade emocional e pela habilidade em explorar temas complexos, como guerra, identidade e moralidade. Boyne já recebeu vários prêmios literários e continua a ser um autor reconhecido internacionalmente, com obras traduzidas em mais de 50 idiomas.</p>
+            </div>
+                <div id ='imgautor'>
+            <img  src="boyne.jpg" alt="John Boyne">
+        </div>
+
+
+        </li>
+    </ul>
+    
+    </section>
+
 
     <div id="formulario">
         <div>
@@ -139,13 +201,8 @@
         </div>
     </div>
 
-    <ul class="gallery">
-        <li style="background: #f6bd60;"></li>
-        <li style="background: #f7ede2;"></li>
-        <li style="background: #f5cac3;"></li>
-        <li style="background: #84a59d;"></li>
-        <li style="background: #f28482;"></li>
-    </ul>
+ 
+
 </body>
 
 <footer>
